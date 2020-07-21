@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Widged</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="opening-hours-container">
+        <div class="left-col">
+            <div class="card" data-tilt>
+                <div class="content">
+                    <i data-feather="calendar"></i>
+                    <span> Monday - Friday </span>
+                </div>
+
+                <div class="content">
+                    <i data-feather="clock"></i>
+                    <span> 10:00 - 16:30 </span>
+                </div>
+            </div>
+
+            <div class="card" data-tilt>
+                <div class="content">
+                    <i data-feather="calendar"></i>
+                    <span> Saturday - Sunday </span>
+                </div>
+
+                <div class="content">
+                    <i data-feather="clock"></i>
+                    <span> 08:00 - 14:00 </span>
+                </div>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="card" id="smart-card" data-status="soon" data-tilt>
+                <div class="content">
+                    <i data-feather="clock"></i>
+                    <span id="smart-status"> We will close soon </span>
+                </div>
+            </div>
+
+            <div class="card" id="smart-card" data-status="close" data-tilt>
+                <div class="content">
+                    <i data-feather="clock"></i>
+                    <span id="smart-status"> We are closed </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
